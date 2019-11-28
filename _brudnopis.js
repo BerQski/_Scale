@@ -20,7 +20,7 @@ console.log(untillEnd(array, 3, szalka3));
 function comPare(szal1, szal2, szal3) {
   const a = szal1.reduce((a, b) => a + b);
   const b = szal2.reduce((a, b) => a + b);
-  const c = szal3.reduce((a, b) => a + b);
+  // const c = szal3.reduce((a, b) => a + b);
   if (a == b) {
     if (szal3[0] > szal3[1]) {
       return szal3[0];

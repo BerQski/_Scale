@@ -31,11 +31,14 @@
 //   }
 // }
 let array = [1, 1, 1, 1, 1, 1, 1, 3];
-let szalka1 = [];
-let szalka2 = [];
-let szalka3 = [];
-function UntillEnd(aRa, cOn, ff) {
+
+let szalka1 = UntillEnd(array, 3);
+let szalka2 = UntillEnd(array, 3);
+let szalka3 = UntillEnd(array, 3);
+
+function UntillEnd(aRa, cOn) {
   let i = 1;
+  let ff = [];
   while (i <= cOn) {
     ff.push(aRa.splice(Math.floor(Math.random() * aRa.length), 1));
     i++;
@@ -43,9 +46,9 @@ function UntillEnd(aRa, cOn, ff) {
   return ff.flat();
 }
 
-console.log(UntillEnd(array, 3, szalka1));
-console.log(UntillEnd(array, 3, szalka2));
-console.log(UntillEnd(array, 3, szalka3));
+// console.log(szalka1, szalka2, szalka3);
+// console.log(UntillEnd(array, 3, szalka2));
+// console.log(UntillEnd(array, 3, szalka3));
 // // console.log(array);
 // function comPare(szal1, szal2, szal3) {
 //   const a = szal1.reduce((a, b) => a + b);
@@ -76,6 +79,7 @@ console.log(UntillEnd(array, 3, szalka3));
 //   }
 // }
 // console.log(comPare(szalka1, szalka2, szalka3));
+
 function ComPareTwo(s1, s2, s3) {
   const a = s1.reduce((a, b) => a + b);
   const b = s2.reduce((a, b) => a + b);
