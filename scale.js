@@ -34,7 +34,7 @@ let array = [1, 1, 1, 1, 1, 1, 1, 3];
 
 let szalka1 = UntillEnd(array, 3);
 let szalka2 = UntillEnd(array, 3);
-let szalka3 = UntillEnd(array, 3);
+let pudelko = UntillEnd(array, 3);
 
 function UntillEnd(aRa, cOn) {
   let i = 1;
@@ -93,4 +93,4 @@ function ComPareTwo(s1, s2, s3) {
       return s3.flat();
   }
 }
-console.log(ComPareTwo(szalka1, szalka2, szalka3));
+console.log(ComPareTwo(szalka1, szalka2, pudelko));
