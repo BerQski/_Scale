@@ -66,17 +66,17 @@ function UntillEnd(aRa, cOn) {
 function ComPareTwo(array, Con) {
   const szala1 = UntillEnd(array, Con);
   const szala2 = UntillEnd(array, Con);
-  const MasaSzalki1 = szala1.reduce((a, b) => a + b);
-  const MasaSzalki2 = szala2.reduce((a, b) => a + b);
+  const masaSzalki1 = szala1.reduce((a, b) => a + b);
+  const masaSzalki2 = szala2.reduce((a, b) => a + b);
 
   switch (
-    MasaSzalki1 > MasaSzalki2 ||
-    MasaSzalki2 > MasaSzalki1 ||
-    MasaSzalki2 === MasaSzalki1
+    masaSzalki1 > masaSzalki2 ||
+    masaSzalki2 > masaSzalki1 ||
+    masaSzalki2 === masaSzalki1
   ) {
-    case MasaSzalki1 > MasaSzalki2 == true:
+    case masaSzalki1 > masaSzalki2 == true:
       return szala1.flat();
-    case MasaSzalki2 > MasaSzalki1 == true:
+    case masaSzalki2 > masaSzalki1 == true:
       return szala2.flat();
     default:
       return array.flat();
